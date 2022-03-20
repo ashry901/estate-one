@@ -1,20 +1,30 @@
-<ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
+{{--
     @if (auth('admin')->check())
         @include('dashboard.includes.sidebar.sidebar-admin')
     @endif
 
-    @if (auth('student')->check())
-        @include('dashboard.includes.sidebar.sidebar-teachers')
+    @if (auth('supervisor')->check())
+        @include('dashboard.includes.sidebar.sidebare-supervisor')
     @endif
 
-    @if (auth('teacher')->check())
-        @include('dashboard.includes.sidebar.sidebar-students')
+    @if (auth('shiftleader')->check())
+        @include('dashboard.includes.sidebar.sidebar-shiftleader')
     @endif
 
-    @if (auth('guardian')->check())
-        @include('dashboard.includes.sidebar.sidebar-guardian')
+    @if (auth('director')->check())
+        @include('dashboard.includes.sidebar.sidebar-director')
     @endif
+--}}
+    <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+        <li class=" nav-item">
+            <a href="{{route('admin.dashboard')}}">
+                <i class="la la-home"></i>
+                <span class="menu-title" data-i18n="eCommerce">
+                {{__('cpanel/sidebar.Dashboard')}}
+            </span>
+            </a>
+        </li>
 
     {{--
     <li class=" navigation-header">

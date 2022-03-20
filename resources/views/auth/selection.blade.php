@@ -64,12 +64,12 @@
                                         <div class="col-xl-4 col-lg-12 mb-1 social-buttons">
                                             <div class="form-group">
 
-                                                <a href="{{route('home')}}" class="btn btn-success">
+                                                <a href="{{route('main')}}" class="btn btn-success">
                                                     <span>Home</span>
                                                 </a>
                                                 <br><br><br><br>
                                                 <!-- Social Buttons block sizes -->
-                                                <a href="{{route('admin.login')}}"
+                                                <a href=""
                                                    class="btn btn-social mb-1 btn-block btn-lg btn-pinterest">
                                                     <span class="la la-user"></span>
                                                     Sign In Admin
